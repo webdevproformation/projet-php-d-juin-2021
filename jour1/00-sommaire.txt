@@ -84,6 +84,7 @@ require()
 require_once()
 include()
 include_once()
+file_exists()
 
 ------------------
 
@@ -152,10 +153,9 @@ method_exists() ;
 get_class_methods()
 get_class_vars("Enfant1")
 
-
+------------------------------
 
 .htaccess
-
 
 RewriteEngine on
 RewriteRule ^([a-zA-Z0-9\-/_]*)$ index.php?p=$1

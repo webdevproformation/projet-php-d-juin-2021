@@ -70,3 +70,6 @@ echo trim($page_accueil , "/") . "<br>" ; // supprimer les / en début et fin de
  // https://www.php.net/ 
 
  // https://www.php.net/manual/fr/ref.strings.php
+
+ // personnaliser l'affichage var_dump via l'extension de PHP xdebug 
+ // rdv 13h42 bon appetit @ toute suite !! 
