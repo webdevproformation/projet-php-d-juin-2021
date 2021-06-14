@@ -55,6 +55,7 @@ array_merge( $tab1, $tab2 );
 count() ;
 array_splice ($array, $offset, $length) ;
 extract()
+current()
 end()
 
 ------------------

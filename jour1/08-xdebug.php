@@ -26,3 +26,5 @@ la ligne avec écrit zend_extension va dépendre de l'ordinateur
 
 https://webdevpro.net/xampp-visual-studio-et-le-module-php-xdebug/
 */
+
+// 09-tableau.php
