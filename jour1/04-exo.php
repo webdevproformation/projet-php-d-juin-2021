@@ -32,3 +32,5 @@ function localisation3(){
     echo $phrase ;
 }
 localisation3();
+
+// 05-string.php
