@@ -28,6 +28,14 @@ number_format($num , $nbDecimals , $decimal_separator , $thousands_separator)
 
 ------------------
 
+[xDebug]
+zend_extension = C:\xampp\php\ext\php_xdebug-2.9.5-7.4-vc15-x86_64.dll
+xdebug.remote_enable = 1
+xdebug.remote_autostart=on
+xdebug.var_display_max_depth=10
+
+------------------
+
 array :
 
 array() / []
