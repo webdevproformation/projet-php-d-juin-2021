@@ -66,3 +66,7 @@ echo trim($page_accueil , "/") . "<br>" ; // supprimer les / en début et fin de
  echo substr($texte , 0 , 100) ."<br>"; 
  echo substr($texte , 0 , 50) ."<br>"; 
  echo substr($texte , 0 , 200) ."<br>"; 
+
+ // https://www.php.net/ 
+
+ // https://www.php.net/manual/fr/ref.strings.php
