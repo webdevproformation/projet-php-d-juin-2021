@@ -34,3 +34,5 @@ $cv = [
     ];
 
 // $cv est un tableau associatif qui contient un index "competence" qui est lui même un tablean indexé
+
+// créer dans le dossier jour1 un nouveau fichier 03-constantes.php
