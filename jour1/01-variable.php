@@ -79,3 +79,24 @@ class Formation{ // l'espace entre le mot class et le mot Formation est OBLIGATO
 
 $f = new Formation();  // l'espace entre le new et Formation est OBLIGATOIRE 
                         // les deux autres espaces sont facultatifs 
+
+// cas pratique 
+// créer dans le dossier jour1 le fichier 02-exo.php 
+
+// dans ce fichier vous allez créer les variables suivantes 
+
+// créer une variable qui s'appelle date est qui contient le texte suivant 14/06/2021
+// créer une autre variable qui s'appelle duree est qui contient  5 jours
+
+// créer une autre variable qui s'appelle sommaire est qui contient  les 4 valeurs suivantes : 
+                        // variable , constante, fonction, fonction natives de PHP
+
+// créer une autre variable qui s'appelle cv est qui contient les 4 valeurs suivantes :
+            // indexé par la string prenom valeur Alain
+            // indexé par la string age valeur 34
+            // indexé par la string experimente valeur true
+            // indexé par la string competence valeur un tableau ayant les valeurs suivantes 
+            //                                 js , php , ajax
+
+
+
