@@ -98,5 +98,5 @@ $f = new Formation();  // l'espace entre le new et Formation est OBLIGATOIRE
             // indexé par la string competence valeur un tableau ayant les valeurs suivantes 
             //                                 js , php , ajax
 
-
+// rdv 10h45 => laisser 5 min pour finir l'exo 
 
