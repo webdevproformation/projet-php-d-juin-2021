@@ -28,3 +28,5 @@ $guerrier->frapper( $magicien );
 $guerrier->frapper( $magicien );
 var_dump($magicien); // 4
 var_dump($guerrier); // 6
+
+// 08-class-statique.php
