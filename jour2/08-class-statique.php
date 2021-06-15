@@ -25,3 +25,5 @@ var_dump(App::$instance);// utilisation d'un attribut static de class hors de la
 App::information3() ; 
 /* $e = new App();
 $e->information(); */
+
+// 09-heritage.php
