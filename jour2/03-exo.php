@@ -28,3 +28,5 @@
   }else{
     var_dump('$deuxieme n\'est pas conforme à 100%');
   }
+
+  // 04-output-buffering.php
