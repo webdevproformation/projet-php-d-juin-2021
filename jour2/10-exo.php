@@ -38,7 +38,6 @@ class Magicien extends Personnage{
     }
 }
 
-
 class Guerrier extends Personnage{
     public $force ; 
     public function __construct(
@@ -52,15 +51,12 @@ class Guerrier extends Personnage{
         parent::__construct($nom , $vie , $actif , $exp);
         $this->force = $force; 
     }
-
     public function attaquer(){
         $attaque = number_format( $this->force* $this->exp , 0, ",", " " );
         return parent::attaquer() . " a une puissance d'attaque de $attaque " ;
     }
 }
-
 $m = new Magicien("Oz" , 30, true , 1000, 60 );
 $g = new Guerrier("Xena" , 40, false , 2000, 50 );
-
 var_dump($m->attaquer()); // 1000 * 60
 var_dump($g->attaquer()); // 2000 * 50
