@@ -43,4 +43,4 @@ var_dump($f->description());
 // le magicien va frapper 2 fois le guerrier
 // le guerrier va frapper 3 fois le magicien 
 
-// afficher les points de vie du guerrier et du magicien 
+// afficher les points de vie du guerrier (6) et du magicien (4)
