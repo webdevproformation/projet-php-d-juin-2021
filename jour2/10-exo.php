@@ -60,3 +60,5 @@ $m = new Magicien("Oz" , 30, true , 1000, 60 );
 $g = new Guerrier("Xena" , 40, false , 2000, 50 );
 var_dump($m->attaquer()); // 1000 * 60
 var_dump($g->attaquer()); // 2000 * 50
+
+// 11-MVC.php
