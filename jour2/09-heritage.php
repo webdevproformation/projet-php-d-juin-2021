@@ -56,3 +56,33 @@ class Ado extends Pere{
 $a = new Ado(14 , "Béatrice", "75 rue du Paradis" );
 
 var_dump($a);
+
+// créer le fichier 10.exo.php 
+
+// class Personnage 
+// deux class qui héritent de Personnage 
+// Magicien // Guerrier
+
+// 4 propriétés de Personnage :
+// nom  string
+// vie  chiffre entier positif
+// actif  boolean
+// exp  chiffre entier positif
+
+// 2 méthodes :
+// méthode attaquer => retourne nom du personnage attaque 
+// constructeur qui va initialiser les 4 propriétés valeurs 
+
+
+// Magicien en plus des propriétés de la class Personnage
+// mana  chiffre entier positif
+
+// méthode attaquer => retourne nom du personnage attaque + exp * mana
+
+
+// Guerrier en plus des propriétés de la class Personnage
+// force  chiffre entier positif
+// méthode attaquer => retourne nom du personnage attaque + exp * force
+
+// parent::__construct();
+// créer ces class et les tester avec des arguments conformes 
