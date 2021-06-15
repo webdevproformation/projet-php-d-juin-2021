@@ -141,4 +141,4 @@ dd($_SERVER);
     // http://localhost/projet-php/jour1/10-exo.php
 // 3 combien d'élément contient cette super globale
 // 4 pouvez vous me récupérer la version de PHP qui est actuellement utilisé dans votre système ??
-// 5 récupérer le contenu de l'item PATH et transformer en tableau indexé via le symbole ; 
+// 5 récupérer le contenu de l'item PATH et transformer en tableau indexé via le symbole ;  
