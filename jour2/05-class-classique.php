@@ -37,3 +37,7 @@ var_dump(get_class_methods($e));
 // pouvez vous me donner l'ensemble des méthodes de la class PDO ??? 
 
 var_dump(get_class_methods(new PDO("mysql:dbname=commerce;host=localhost;charset=utf8","root","")));
+
+// rdv 13h33 bon app @ tout suite !! 
+
+// 06-this.php
