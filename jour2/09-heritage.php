@@ -57,7 +57,7 @@ $a = new Ado(14 , "Béatrice", "75 rue du Paradis" );
 
 var_dump($a);
 
-// créer le fichier 10.exo.php 
+// créer le fichier 10-exo.php 
 
 // class Personnage 
 // deux class qui héritent de Personnage 
@@ -78,7 +78,6 @@ var_dump($a);
 // mana  chiffre entier positif
 
 // méthode attaquer => retourne nom du personnage attaque + exp * mana
-
 
 // Guerrier en plus des propriétés de la class Personnage
 // force  chiffre entier positif
