@@ -51,6 +51,7 @@ foreach(){}
 
 array_keys ( $array );
 array_sum( ) ;
+array_key_exists( "HTTP_HOST" , $_SERVER)
 array_merge( $tab1, $tab2 ); 
 count() ;
 array_splice ($array, $offset, $length) ;

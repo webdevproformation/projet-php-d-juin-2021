@@ -59,3 +59,5 @@ $versionPHP = end($params);
 var_dump($versionPHP);
 
 var_dump(explode(";",$_SERVER["PATH"])); // C:\xampp\php
+
+// 02-boolean.php dans le dossier jour2
