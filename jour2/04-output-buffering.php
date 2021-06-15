@@ -26,3 +26,7 @@
     <?php echo $text_dans_ram ?><!-- https://www.php.net/manual/fr/function.echo.php -->
 </body>
 </html>
+
+<!-- 
+    05-class-classique.php
+--> 
