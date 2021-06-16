@@ -1,0 +1,31 @@
+
+
+modifier le fichier index.php 
+
+echo "Erreur 404"; 
+
+
+replacé par 
+header("HTTP/1.1 404 Not Found"); // moteur de recherche 
+ob_start();
+require "vue/404.php";
+$content_for_template = ob_get_clean();
+require "vue/template/front.php";
+
+die(); // mort exit() stopper net l'exécution du code 
+
+
+http://localhost/projet-php/tp/404
+http://localhost/projet-php/tp/blabla
+
+
+pour éviter de se répéter de mettre dans une class App => le dossier core
+
+
+class A{
+    static function b(){
+
+    }
+}
+
+A::b()
