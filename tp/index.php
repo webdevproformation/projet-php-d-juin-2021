@@ -2,15 +2,16 @@
 
 // Dispatcher 
 // toutes les requêtes vont être orientées vers ce fichier (grâce au fichier  .htaccess)
+//var_dump($_GET);
 
-if( !empty($_GET["page"])){
+if( isset($_GET["page"])){
     // http://localhost/projet-php/tp/accueil/index => adresse de page d'accueil
     require "core/controller.class.php";
 
-    $params = explode( "/" , $_GET["page"] ); // accueil/index =>  ["accueil", "index"]
+    $params = explode( "/" , trim($_GET["page"] , "/") ); // accueil/index =>  ["accueil", "index"]
 
-    $controller = $params[0]; // "accueil"
-    $method = $params[1];  // "index"
+    $controller = ( empty( $params[0] ) ) ? "accueil" : strtolower($params[0]); // "accueil"
+    $method = ( isset( $params[1]) ) ? strtolower($params[1]) : "index";  // "index"
 
     $controller_file = "controller/$controller.class.php"; // "controller/accueil.class.php"
     // l'adresse du fichier .php controller qui va être chargé 

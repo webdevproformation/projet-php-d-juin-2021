@@ -1,0 +1,30 @@
+http://localhost/projet-php/tp/accueil/index
+
+
+pour la page d'accueil du site => je vais faire en sorte QUE si je saisis l'adresse suivante :
+
+http://localhost/projet-php/tp/ => affiche quand même page d'accueil du site 
+
+modifier le fichier index.php 
+
+isset() permet de vérifier si une variable existe 
+isset($toto); // false 
+
+$tab = [
+    "premier" => 1,
+    "deuxieme" => 2
+]
+isset($tab["premier"]) // true
+isset($tab["troisieme"]) // false
+
+isset($_GET["page"]) // true grâce au fichier .htaccess qui fait une réécriture
+
+
+// http://localhost/projet-php/tp/accueil/index
+// http://localhost/projet-php/tp/accueil
+// http://localhost/projet-php/tp/
+
+// http://localhost/projet-php/tp/accueil/ 
+
+// http://localhost/projet-php/tp/ACCUEIL/INDEX 
+// http://localhost/projet-php/tp/AcCUEIL/inDEX 
