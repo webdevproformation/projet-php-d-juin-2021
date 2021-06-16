@@ -9,13 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container-fluid bg-primary">
+    <div class="container-fluid bg-warning">
         <header class="container">
-            <nav class="col navbar navbar-expand navbar-dark">
+            <nav class="col navbar navbar-expand navbar-light">
                 <a href="#" class="navbar-brand">TP PHP</a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="#" class="nav-link">Accueil</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Connexion</a>
                     </li>
                 </ul>
             </nav>
@@ -23,9 +28,7 @@
     </div>
     <main class="container">
         <section class="row">
-            <div class="col">
-                <?=  $content_for_template ?>
-            </div>
+            <?=  $content_for_template ?>
         </section>
     </main>
 </body>

@@ -2,12 +2,15 @@
 
 class Controller{
 
-    public function render($nom_template){
+    public $data = [] ;
 
+    public function render($nom_template){
         ob_start();
         $controller_name = get_class($this); // "AccueilController"
         $controller_name = str_replace("Controller", "", $controller_name); // "Accueil"
         $controller_name = strtolower($controller_name); // "accueil"
+
+        extract($this->data); // envoyer les données dans la vue 
 
         require "vue/$controller_name/$nom_template.php"; // "vue/accueil/home.php"
         
@@ -18,5 +21,9 @@ class Controller{
         // créer le fichier front.php dans le dossier template
 
     } 
+
+    public function send($data){
+        $this->data = $data;
+    }
 
 }
