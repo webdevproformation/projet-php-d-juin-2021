@@ -8,6 +8,7 @@
     <!--  google  > bootstrap > https://getbootstrap.com/ > get started -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container-fluid bg-warning">
         <header class="container">
@@ -28,8 +29,10 @@
     </div>
     <main class="container">
         <section class="row">
-            <?=  $content_for_template ?>
+            <?= $content_for_template ?>
         </section>
     </main>
 </body>
+
 </html>
+<!-- 13h50 bon appétit -->

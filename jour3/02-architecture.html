@@ -1,0 +1,32 @@
+
+1 appel firefox / chrome => http://localhost/projet-php/tp/accueil/index
+
+2 appeler le serveur XAMPP ou MAMP => dossier tp 
+
+3 .htaccess => réécrire d'url 
+http://localhost/projet-php/tp/accueil/index
+http://localhost/projet-php/tp/index.php?page=accueil/index
+
+4 index.php 
+    dans ce fichier récupérer accueil/index via la super globale $_GET["page"]
+    a/ charger (require) le fichier controller/accueil.class.php 
+    b/ créer une instance de la class $c =  new AccueilController()
+    c/ exécute une méthode $c->index();
+
+5 controller/accueil.class.php dans la méthode index() 3 choses
+    a/ créer une variable $data => gros tableau
+    b/ $this->send($data) => envoyer la variable $data à la vue 
+    c/ appel le fichier de vue 
+        $this->render("home")
+
+    les deux méthodes send() et render() créée dans core/controller.class.php 
+    render() => Symfony / CakePHP => framework en PHP 
+        récupérer les données envoyées depuis la méthode send()
+        charger une fichier de vue => vue/accueil/home.php 
+        charger le fichier vue/template/front.php => Bootstrap pour la mise en forme
+
+MVC => une manière de réaliser / de coder l'architecture Model View Controller
+
+
+index.php => fait sa page 
+contact.php => fait sa contact  

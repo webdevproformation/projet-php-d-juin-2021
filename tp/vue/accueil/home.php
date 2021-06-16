@@ -16,5 +16,3 @@
         </article>
     <?php endforeach ?>
 </div>
-
-
