@@ -8,6 +8,7 @@ if( isset($_GET["page"])){
     // http://localhost/projet-php/tp/accueil/index => adresse de page d'accueil
     require "core/controller.class.php";
     require "core/app.class.php";
+    require "core/bdd.class.php";
 
     $params = explode( "/" , trim( $_GET["page"] , "/") ); // accueil/index =>  ["accueil", "index"]
 
