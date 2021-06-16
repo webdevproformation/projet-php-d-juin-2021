@@ -5,5 +5,33 @@
 3 lancer XAMPP ou MAMP et les services Apache et MySQL 
 
 4 voici l'url de la page d'accueil (pour l'instant)
+
 http://localhost/projet-php/tp/accueil/index
 http://localhost:8888/projet-php/tp/accueil/index
+
+1 barre d'adresse => requête => http://localhost/projet-php/tp/accueil/index
+
+2 Apache reçoit la demande et la dirige vers le dossier tp 
+
+3 dans le dossier tp il y a un fichier de configuration de Apache 
+.htaccess => réécriture d'url en live de manière transparente 
+
+RewriteRule ^([a-zA-Z0-9_\-/]*)$ index.php?page=$1 
+
+http://localhost/projet-php/tp/accueil/index
+http://localhost/projet-php/tp/index.php?page=accueil/index
+
+4 index.php (c'est notre point d'entrée de notre site internet)
+
+cette organisation permet 2 choses : 
+    - tout passe par le fichier index.php 
+    - ?page=accueil/index => $_GET["page"]
+
+    Controller => accueil class
+    index      => méthode 
+
+=> MVC 
+
+=>  faire la page d'accueil 
+
+=> modifier le fichier index.php 
