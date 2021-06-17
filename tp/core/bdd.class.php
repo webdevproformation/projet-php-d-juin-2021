@@ -33,6 +33,6 @@ class Bdd{
     public function query($sql , $params = []){
         $requete = $this->connexion->prepare($sql);
         $requete->execute($params);
-        return $requete->fetchAll(PDO::FETCH_OBJ);
+        return  $requete->fetchAll(PDO::FETCH_OBJ);
     }
 }

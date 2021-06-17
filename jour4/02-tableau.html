@@ -1,0 +1,31 @@
+<?php 
+
+                0  , 1          2
+$courses = ["pomme", "poire", "abricot"];
+
+// supprimer les deux premiers éléments du tableau $courses
+
+$last = array_splice($courses , 2);
+
+$last = ["abricot"]
+
+
+// article/view/3
+
+$params = ["article" , "view" , "3"]
+
+$params = array_splice($params , 2);
+
+$params = ["3"]
+
+$c = new ArticleController()
+
+$c->view("3")
+
+$c->view();
+
+call_user_func_array() // fonction qui permet d'exécuter une fonction
+
+call_user_func_array([$c , $method] , $params)
+
+

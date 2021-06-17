@@ -23,8 +23,10 @@ if( isset($_GET["page"])){
         $c = new $class_name(); // créer un objet $c qui est une instance de AccueilController
 
         if(method_exists($c , $method)){
-            $c->$method(); // exécuter la méthode index dans la class AccueilController
+            // $c->$method(); // exécuter la méthode index dans la class AccueilController
                        // $c->index()
+            $params = array_splice($params, 2);
+            call_user_func_array([$c, $method] , $params);
         } else {
             App::erreur404();
             die(); 
@@ -34,7 +36,7 @@ if( isset($_GET["page"])){
         App::erreur404();
         die(); // mort exit() stopper net l'exécution du code 
     }
-    var_dump($params) ;
+   
 }
 
 // rdv dans 15 min => 15h35 bon café @ toute suite !!!!!!!!!!
