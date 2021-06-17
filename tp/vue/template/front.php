@@ -7,9 +7,10 @@
     <title>Document</title>
     <!--  google  > bootstrap > https://getbootstrap.com/ > get started -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="<?= WWW ?>public/style.css"  rel="stylesheet">
 </head>
 
-<body>
+<body class="fond"> <!--  -->
     <div class="container-fluid bg-warning">
         <header class="container">
             <nav class="col navbar navbar-expand navbar-light">
@@ -22,6 +23,9 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a href="#" class="nav-link">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="<?= WWW ?>admin/accueil" class="nav-link">Gestion du site</a>
                     </li>
                 </ul>
             </nav>
