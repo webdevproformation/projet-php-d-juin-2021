@@ -36,7 +36,7 @@ if( isset($_GET["page"])){
         App::erreur404();
         die(); // mort exit() stopper net l'exécution du code 
     }
-   
+   // rdv 13h30 !! bon appétit 
 }
 
 // rdv dans 15 min => 15h35 bon café @ toute suite !!!!!!!!!!
