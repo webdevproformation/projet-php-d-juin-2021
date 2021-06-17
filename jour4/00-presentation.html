@@ -1,0 +1,67 @@
+tout le support est disponible :
+
+https://github.com/webdevproformation/projet-php-d-juin-2021
+
+
+jour1 / jour2 => rappels en PHP => présenter ou re présenter des fonctions de PHP que je vais utiliser dans le projet 
+
+=> je vais les utiliser dans le projet 
+
+jour3 => expliquer l'organisation du projet 
+
+tp => LE PROJET 
+
+créer les principaux dossiers du projet 
+controller/ 
+model/ 
+core/
+vue
+.htaccess 
+index.php 
+
+=> créer une base de données "demo" et qui contient une table articles
+
+le projet que nous allons réaliser => Blog => site qui permet de créer des articles 
+
+Démarrer Visual Studio
+XAMPP ou MAMP et démarrer Apache et MySQL 
+
+
+Bdd::getPdo()->query("SELECT * FROM articles") => 2 choses :
+
+    Bdd::getPdo() connexion à la base de données (demo)
+    ->query("SELECT * FROM articles") requête SQL => SELECT * FROM articles 
+                                         je veux récupérer toutes les lignes et toutes les colonnes qui sont stockées dans la table articles
+
+    tableau indexé => chaque élément est numéroté avec un chiffre 
+    et chaque élément object de type stdClass
+
+  $articles =  [ {}, {} , {} , { } ];
+
+    => Collection = tableau qui contient un ou plusieurs objets
+    
+si je parcours ce tableau avec un foreach 
+
+    $articles =  [ [] ,[] , [] , [] ]; 
+
+    foreach ($articles as $article ){
+        $article["titre"]; // tableau qui contient des tableaux
+        $article["id"];
+        $article["contenu"];
+    }
+
+    $articles =  [ {}, {} , {} , { } ]; Bdd::getPdo()->query("SELECT * FROM articles")
+
+    foreach ($articles as $article ){
+        $article->titre; // tableau qui contient des objects
+        $article->id;
+        $article->contenu;
+    }
+
+    new PDO();
+
+    [ new stdClass(),  new stdClass() ,  new stdClass() ,  new stdClass() ] // Entite 
+
+fonction de mise en forme 
+
+=> dans la class App dans le dossier core 

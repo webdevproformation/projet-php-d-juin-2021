@@ -11,4 +11,11 @@ class App{
         require "vue/template/front.php";
     }
 
+    /**
+     * fonction permettant de prendre les 100 premiers caractères d'une string
+     */
+    static function more(string $contenu){
+        return substr($contenu , 0 , 100);
+    }
+
 }

@@ -10,8 +10,8 @@ class AccueilController extends Controller{
             "articles" => Bdd::getPdo()->query("SELECT * FROM articles")
         ];
 
-        var_dump($data);
-        die();
+        // var_dump($data);
+        // die();
 
         $this->send($data); // envoyer les données dans la vue sélectionnée par la méthode render()
 
