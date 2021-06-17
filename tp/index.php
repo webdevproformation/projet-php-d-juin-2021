@@ -6,6 +6,18 @@
 
 if( isset($_GET["page"])){
     // http://localhost/projet-php/tp/accueil/index => adresse de page d'accueil
+    // mysql:dbname=demo;charset=utf8;host:locahost:3307
+    //var_dump($_SERVER);
+    $protocole = $_SERVER['REQUEST_SCHEME']; // http
+    $domaine = $_SERVER['HTTP_HOST']; // localhost
+    $port = ($_SERVER["SERVER_PORT"] == "80") ? "" : ":" . $_SERVER["SERVER_PORT"] ; // 8888
+    // if ternaire 
+    $path = str_replace("index.php", "", $_SERVER['PHP_SELF']); //  projet-php/tp/
+    // die();
+
+    define("WWW" , "$protocole://$domaine$port$path"  ); 
+    //var_dump(WWW); die();
+
     require "core/controller.class.php";
     require "core/app.class.php";
     require "core/bdd.class.php";

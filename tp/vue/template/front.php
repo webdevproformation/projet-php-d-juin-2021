@@ -13,10 +13,10 @@
     <div class="container-fluid bg-warning">
         <header class="container">
             <nav class="col navbar navbar-expand navbar-light">
-                <a href="#" class="navbar-brand">TP PHP</a>
+                <a href="<?= WWW ?>accueil/index" class="navbar-brand">TP PHP</a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="accueil/index" class="nav-link">Accueil</a>
+                        <a href="<?= WWW ?>accueil/index" class="nav-link">Accueil</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">

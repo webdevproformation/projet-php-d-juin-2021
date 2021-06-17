@@ -13,7 +13,7 @@
                     <?= App::more($article->contenu) ?>
                 </p>
                 <footer class="card-footer">
-                    <a href="article/view/<?= $article->id ?>" class="btn btn-sm btn-primary">lire la suite</a>
+                    <a href="<?= WWW ?>article/view/<?= $article->id ?>" class="btn btn-sm btn-primary">lire la suite</a>
                 </footer>
             </div>
         </article>
