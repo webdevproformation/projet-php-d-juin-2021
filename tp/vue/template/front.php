@@ -10,7 +10,7 @@
     <link href="<?= WWW ?>public/style.css"  rel="stylesheet">
 </head>
 
-<body class="fond"> <!--  -->
+<body > <!--  -->
     <div class="container-fluid bg-warning">
         <header class="container">
             <nav class="col navbar navbar-expand navbar-light">

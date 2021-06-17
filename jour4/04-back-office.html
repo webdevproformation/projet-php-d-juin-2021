@@ -3,3 +3,25 @@ http://localhost/projet-php/tp/admin/accueil
 => accueil 
 
 vue/template/front.php
+
+<li class="nav-item">
+    <a href="<?= WWW ?>admin/accueil" class="nav-link">Gestion du site</a>
+</li>
+
+controller/ 
+    admin.class.php
+
+$nom 
+
+class Toto{
+    public $nom ; // variable => propriété !!! 
+    public $age ; 
+
+    public function description(){
+        return $this->nom ; // erreur 
+    }
+}
+
+$t = new Toto();
+
+$t->description() ; 
