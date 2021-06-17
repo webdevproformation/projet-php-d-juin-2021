@@ -12,7 +12,14 @@ class Controller{
 
         extract($this->data); // envoyer les données dans la vue 
 
-        require "vue/$controller_name/$nom_template.php"; // "vue/accueil/home.php"
+        $path_template = "vue/$controller_name/$nom_template.php";
+
+        if(!file_exists($path_template)){
+            echo "<br>veuillez créer le fichier $path_template";
+            die();
+        }
+
+        require $path_template ;  // "vue/accueil/home.php"
         
         $content_for_template = ob_get_clean();
 

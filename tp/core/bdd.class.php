@@ -27,6 +27,9 @@ class Bdd{
         // MS Server 
         // SQlite
     }
+    /**
+     * requete préparée dans la base de données 
+     */
     public function query($sql , $params = []){
         $requete = $this->connexion->prepare($sql);
         $requete->execute($params);
