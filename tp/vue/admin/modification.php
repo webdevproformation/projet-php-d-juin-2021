@@ -5,7 +5,7 @@
 </div>
 <section class="row">
     <div class="col">
-        <form action="<?= WWW ?>admin/modif/<?= $article->id ?>" method="POST">
+        <form action="<?= WWW ?>admin/modif/<?= App::esc($article->id) ?>" method="POST">
             <div class="form-group">
                 <label for="titre">Titre</label>
                 <input type="text" name="titre" id="titre" class="form-control" value="<?= App::esc($article->titre) ?>">

@@ -22,7 +22,7 @@
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Connexion</a>
+                        <a href="<?= WWW ?>login" class="nav-link">Connexion</a>
                     </li>
                     <li class="nav-item">
                         <a href="<?= WWW ?>admin/accueil" class="nav-link">Gestion du site</a>

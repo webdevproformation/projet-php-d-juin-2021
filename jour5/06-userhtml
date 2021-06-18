@@ -1,0 +1,27 @@
+dans la base de données demo 
+
+créer une nouvelle table utilisateurs
+
+3 colonnes 
+id Int clé primaire et auto incrément 
+login VARCHAR de 50 caractères UNIQUE 
+password VARCHAR de 120 caractères
+
+attention dans la table utilisateurs vous allez stocker des informations 
+sensibles => login et password 
+
+ce sont des informations  sensibles 
+
+avant d'ajouter des lignes dans cette table => fonction de hachage 
+
+"azerty"  =>  crypter  => "fpozufiozugiovdiyfu"
+
+n'existe pas de fonction de décryptage pour les fonctions de hashage 
+
+"fpozufiozugiovdiyfu" => decrypter => "azerty" 
+
+md5() ne pas utiliser 
+sha1() un peu plus compliqué 
+
+sha2()
+sha256() // https://cryptostrategie.com/sha256-algorithme-bitcoin/
