@@ -48,3 +48,13 @@ class LoginController extends Controller{
         header("Location: ".WWW."login");
     }
 }
+
+// améliorations possibles :
+
+// gestion des utilisateurs => comment modifier son mot de passe depuis le site 
+// mot de passe perdu 
+// associer les utilisateurs aux articles 
+// droits aux utilisateurs Admin / rédacteur 
+// ajouter des catégories
+// ajouter des images aux articles 
+// ajouter du javascript pour améliorer l'ergonomie du site 
