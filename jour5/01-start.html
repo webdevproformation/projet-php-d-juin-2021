@@ -1,0 +1,58 @@
+le formulaire pour ajouter de nouveaux articles 
+
+
+http://localhost/projet-php/tp/admin/ajouter
+
+controller/admin.class.php => 
+
+class AdminController{ 
+
+    public function ajouter(){
+
+        $this->render("ajouter"); // appeler un fichier de vue 
+
+    }
+}
+
+vue/admin/ajouter.php 
+
+
+les variables supers globales en PHP, créer automatiquement par PHP 
+attention bien respecter _ et MAJUSCULE $_server $_Server 
+
+index.php 
+
+$_SERVER => information sur le script qui est exécuté : nom du fichier php exécuté / protocole / domaine du serveur => environnement exécution de votre code 
+
+$_GET => $_GET["page"] => permet de récupérer 
+http://localhost/projet-php/tp/admin/ajouter
+http://localhost/projet-php/tp/index.php?page=admin/ajouter
+
+$_POST => variable super globale qui permet de récupérer tous les valeurs saisies dans un formulaire 
+attention lorsque l'on écrit un formulaire en html il faut préciser que le formulaire fonction avec cette method 
+
+vue/admin/ajouter.php
+
+en html il y a trois balises qui entraine un changement de page 
+
+=> <a href="<?= WWW ?>accueil/index"></a> => $_GET
+
+=> <form action="<?= WWW ?>accueil/index" method="POST"></form>  
+suite à la soumission (cliquer sur le bouton submit du formulaire) => 
+    action="lien/vers/page" vers quelle page je suis dirigé $_GET
+    method="POST" comment récupérer les informations saisies dans le formulaire   $_POST 
+
+    tableau associatif 
+        [ 
+            "nom_champ1" => "valeur saisie par l'internaute,"
+            "nom_champ2" => "valeur saisie par l'internaute,"
+            "nom_champ3" => "valeur saisie par l'internaute,"
+            "nom_champ4" => "valeur saisie par l'internaute,"
+        ]
+
+        empty => vide 
+
+=> <iframe src="" frameborder="0"></iframe>
+
+
+$_SESSION 

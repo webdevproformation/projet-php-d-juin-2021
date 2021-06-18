@@ -5,7 +5,7 @@
 </div>
 <div class="row">
     <div class="col">
-        <form action="<?= WWW ?>admin/ajouter">
+        <form action="<?= WWW ?>admin/ajouter" method="POST">
             <div class="form-group">
                 <label for="titre">titre</label>
                 <input type="text" name="titre" id="titre" class="form-control">

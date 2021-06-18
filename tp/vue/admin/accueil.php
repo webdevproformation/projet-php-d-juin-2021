@@ -23,7 +23,7 @@
         <td>
             <a href="<?= WWW ?>article/view/<?= $article->id ?>" class="btn btn-primary">voir</a>
             <a href="<?= WWW ?>admin/modif/<?= $article->id ?>" class="btn btn-warning mx-2">modifier</a>
-            <a href="<?= WWW ?>admin/suppr/<?= $article->id ?>" class="btn btn-danger">supprimer</a>
+            <a href="<?= WWW ?>admin/suppr/<?= $article->id ?>" class="btn btn-danger" onclick="return confirm('confirmer la suppression de l\'article <?= $article->id ?>')">supprimer</a>
         </td>
     </tr>
             <?php endforeach ?>

@@ -8,6 +8,8 @@ if( isset($_GET["page"])){
     // http://localhost/projet-php/tp/accueil/index => adresse de page d'accueil
     // mysql:dbname=demo;charset=utf8;host:locahost:3307
     //var_dump($_SERVER);
+    // symfony / cakephp / laravel PHP =>
+    // ruby on rail => Ruby  => MVC 
     $protocole = $_SERVER['REQUEST_SCHEME']; // http
     $domaine = $_SERVER['HTTP_HOST']; // localhost
     $port = ($_SERVER["SERVER_PORT"] == "80") ? "" : ":" . $_SERVER["SERVER_PORT"] ; // 8888
