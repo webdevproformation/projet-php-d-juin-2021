@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col">
-        <h1><?= $titre ?></h1>
+        <h1><?= App::esc($titre) ?></h1>
     </div>
 </div>
 <div class="row my-3">
@@ -18,12 +18,12 @@
             </tr>
             <?php foreach ($articles as $article ) : ?>
     <tr>
-        <td><?= $article->id ?></td>
-        <td><?= $article->titre ?></td>
+        <td><?= App::esc($article->id) ?></td>
+        <td><?= App::esc($article->titre) ?></td>
         <td>
-            <a href="<?= WWW ?>article/view/<?= $article->id ?>" class="btn btn-primary">voir</a>
-            <a href="<?= WWW ?>admin/modif/<?= $article->id ?>" class="btn btn-warning mx-2">modifier</a>
-            <a href="<?= WWW ?>admin/suppr/<?= $article->id ?>" class="btn btn-danger" onclick="return confirm('confirmer la suppression de l\'article <?= $article->id ?>')">supprimer</a>
+            <a href="<?= WWW ?>article/view/<?= App::esc($article->id) ?>" class="btn btn-primary">voir</a>
+            <a href="<?= WWW ?>admin/modif/<?= App::esc($article->id) ?>" class="btn btn-warning mx-2">modifier</a>
+            <a href="<?= WWW ?>admin/suppr/<?= App::esc($article->id) ?>" class="btn btn-danger" onclick="return confirm('confirmer la suppression de l\'article <?= App::esc($article->id) ?>')">supprimer</a>
         </td>
     </tr>
             <?php endforeach ?>

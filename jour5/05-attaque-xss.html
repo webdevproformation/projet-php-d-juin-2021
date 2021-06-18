@@ -1,0 +1,31 @@
+injection SQL => arrive a faire exécuter par code une requête sql non voulue
+
+SELECT * FROM articles WHERE id = 1 ; DELETE FROM articles ;
+
+dans la class qui permet de communiquer avec la BDD = PDO 
+
+requête préparée 
+
+Bdd::getPdo->query()
+
+--------------------------- 
+
+attaque XSS : Cross Site Scripting 
+
+=> la personne va réussir créer un article => mettre dedans du javascript 
+
+=> en réussi à écrire du html => balise 
+<script>document.addEventListener("keydown", function(e){
+    console.log(e);
+})</script>
+// https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/
+<img src="" alt="">
+
+$texte = '<img src="" alt="">';
+
+htmlspecialchar($texte) // '&lt;img src="" alt=""&gt;';
+
+core/app.class.php 
+
+
+

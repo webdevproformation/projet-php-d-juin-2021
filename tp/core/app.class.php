@@ -15,7 +15,14 @@ class App{
      * fonction permettant de prendre les 100 premiers caractères d'une string
      */
     static function more(string $contenu){
-        return substr($contenu , 0 , 100);
+        return self::esc(substr($contenu , 0 , 100));
+    }
+    
+    /**
+     * fonction d'échappement pour éviter les injections XSS
+     */
+    static function esc(string $texte){ // échapper des caractères 
+        return htmlspecialchars($texte);
     }
 
 }
