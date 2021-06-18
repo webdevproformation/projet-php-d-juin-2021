@@ -21,12 +21,19 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
+                    <?php if(!isset($_SESSION["auth"])) : ?>
                     <li class="nav-item">
                         <a href="<?= WWW ?>login" class="nav-link">Connexion</a>
                     </li>
+                    <?php endif ?>
+                    <?php if(isset($_SESSION["auth"])) : ?>
                     <li class="nav-item">
                         <a href="<?= WWW ?>admin/accueil" class="nav-link">Gestion du site</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="<?= WWW ?>login/deconnexion" class="nav-link">Déconnexion</a>
+                    </li>
+                    <?php endif ?>
                 </ul>
             </nav>
         </header>

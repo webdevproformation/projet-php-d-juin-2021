@@ -20,11 +20,31 @@ class LoginController extends Controller{
 
                 $user = Bdd::getPdo()->query($sql , $identifiants);
 
-                var_dump($user);
+                // var_dump($user);
+                if(!empty($user)){
+                    // $_SESSION
+                    // super globale 
+                    // variable de type tableau associatif => Serveur gardé en mémoire tout au long de la navigation sur le site 
+                    // pour utiliser cette variable, il faut au préalable écrire la fonction suivante 
+
+                    // session_start(); à mettre dans le fichier index.php au début du fichier
+                    $_SESSION["auth"] = "ok";
+                    header("Location: ".WWW."admin/accueil");
+
+                    // $_POST
+                    // $_GET 
+                    // $_SERVER
+                }
+                
 
         }
 
         $this->render("connexion");
 
+    }
+
+    public function deconnexion(){
+        unset($_SESSION["auth"]);
+        header("Location: ".WWW."login");
     }
 }

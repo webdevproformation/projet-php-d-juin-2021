@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 // Dispatcher 
 // toutes les requêtes vont être orientées vers ce fichier (grâce au fichier  .htaccess)
 //var_dump($_GET);
